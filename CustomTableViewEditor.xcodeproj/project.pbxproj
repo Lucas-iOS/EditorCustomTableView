@@ -16,6 +16,7 @@
 		5E3A5AC51C0435F2004B47A4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A5AC41C0435F2004B47A4 /* TableViewController.m */; };
 		5E3A5AC81C0436CE004B47A4 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A5AC71C0436CE004B47A4 /* Object.m */; };
 		5E3A5ACB1C04374F004B47A4 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A5ACA1C04374F004B47A4 /* TableViewCell.m */; };
+		5E3A5ACD1C046501004B47A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5E3A5ACC1C046501004B47A4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		5E3A5AC71C0436CE004B47A4 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
 		5E3A5AC91C04374F004B47A4 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		5E3A5ACA1C04374F004B47A4 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		5E3A5ACC1C046501004B47A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				5E3A5A9C1C0432E4004B47A4 /* Assets.xcassets */,
 				5E3A5A9E1C0432E4004B47A4 /* LaunchScreen.storyboard */,
 				5E3A5AA11C0432E4004B47A4 /* Info.plist */,
+				5E3A5ACC1C046501004B47A4 /* README.md */,
 				5E3A5A901C0432E4004B47A4 /* Supporting Files */,
 			);
 			path = CustomTableViewEditor;
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3A5ACD1C046501004B47A4 /* README.md in Sources */,
 				5E3A5A951C0432E4004B47A4 /* AppDelegate.m in Sources */,
 				5E3A5AC51C0435F2004B47A4 /* TableViewController.m in Sources */,
 				5E3A5AC81C0436CE004B47A4 /* Object.m in Sources */,
@@ -496,6 +500,7 @@
 				5E3A5ABC1C0432E4004B47A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3A5ABD1C0432E4004B47A4 /* Build configuration list for PBXNativeTarget "CustomTableViewEditorTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				5E3A5ABF1C0432E4004B47A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3A5AC01C0432E4004B47A4 /* Build configuration list for PBXNativeTarget "CustomTableViewEditorUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				5E3A5AC21C0432E4004B47A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
