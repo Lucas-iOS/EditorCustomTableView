@@ -17,7 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *allButton;
 @property (nonatomic, strong) NSArray *datas;
 @property (nonatomic, strong) NSMutableArray *cells;
-@property (nonatomic, strong) NSMutableArray *selectedCells;
 @property (nonatomic) BOOL isSelected;
 @property (nonatomic) BOOL isCheckAll;
 
@@ -29,7 +28,6 @@
     [super viewDidLoad];
     _footerView.alpha = 0;
     _cells = [NSMutableArray array];
-    _selectedCells = [NSMutableArray array];
     
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     //假数据
@@ -117,7 +115,6 @@
 
 //全选
 - (IBAction)selectAll:(UIButton *)sender {
-    [_selectedCells removeAllObjects];
     _isCheckAll = !_isCheckAll;
     for (Object *obj in _cells) {
         obj.isSelected = _isCheckAll;
@@ -140,11 +137,12 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
         //根据isSelected删除
-        [_cells enumerateObjectsUsingBlock:^(Object *obj, NSUInteger idx, BOOL *stop) {
-            if (obj.isSelected == YES) {
-                [_cells removeObjectAtIndex:idx];
+        NSArray *cell_copy = [[NSArray alloc]initWithArray:_cells];
+        for (Object *obj in cell_copy) {
+            if(obj.isSelected == YES) {
+                [_cells removeObject:obj];
             }
-        }];
+        }
         [self.tableView reloadData];
     }
 }
